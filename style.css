@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 30px;
+}
+
+.container{
+    width: 100vw;
+    height: 90vh;
+    background: url("./cool-background\ \(2\).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5%;
+}
+
+.left{
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hide {
+    border-right: 3px solid rgb(255, 255, 255);
+}
+
+.left .name{
+    color: #fff;
+}
+
+.left img{
+    width: 50%;
+    border-radius: 200px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.7);
+}
+
+.left::after{
+    content: "";
+    width: 200px;
+    height: 5px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 10px 3px rgba(180, 209, 180, 0.7);
+}
+
+.right {
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social .icons {
+    display: flex;
+    gap: 20px;
+    padding: 50px 0;
+}
+
+.fab{
+    transition: all .1s ease-in-out;
+}
+
+.fab:hover{
+    transform: translateY(-5px);
+    border-bottom: 1px solid #fff;
+}
+
+.right ul{
+    margin-top: 50px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.right i {
+    cursor: pointer;
+    color: #fff;
+    font-size: 40px;
+}
+
+.right li a {
+    text-decoration: none;
+    padding: .2em .5em;
+    border: 1px solid #fff;
+    margin-left: 5px;
+    color: #fff;
+    border-radius: 5px;
+}
+.right li {
+    list-style: none;
+}
+
+.right li a:hover{
+    background: darkblue;
+    color: #fff;
+}
+
+.resume_btn{
+    text-decoration: none;
+    padding: 5px 10px;
+    width: fit-content;
+    height: fit-content;
+    background: #fff;
+    color: darkblue;
+    border: none;
+    cursor: pointer;
+}
+
+.resume_btn:active{
+    transform: scale(.98);
+}
+
+.resume_btn:hover {
+    color: #fff;
+    background: darkblue;
+    border: 1px solid #fff;
+}
+@media only screen and (max-width: 800px) 
+  {
+      .container{
+          padding: 40px;
+          display: flex;
+          flex-direction: column;
+      }
+
+  }
